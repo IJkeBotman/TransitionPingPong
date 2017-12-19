@@ -73,8 +73,8 @@
 			isa = PBXGroup;
 			children = (
 				0A8AAE451FE9B64700D65AAF /* ColoredViewController.swift */,
-				0A8AAE441FE9B62D00D65AAF /* Black Screen */,
 				0A8AAE431FE9B61A00D65AAF /* White Screen */,
+				0A8AAE441FE9B62D00D65AAF /* Black Screen */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";

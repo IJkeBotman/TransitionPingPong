@@ -6,4 +6,18 @@
 //  Copyright © 2017 IJke Botman. All rights reserved.
 //
 
-import Foundation
+import UIKit
+
+class BlackViewController: ColoredViewController {
+    init() {
+        super.init(color: .black)
+    }
+    
+    override func buttonWasTapped() {
+        navigationController?.popViewController(animated: true)
+    }
+    
+    required init?(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) was not implemented.")
+    }
+}
