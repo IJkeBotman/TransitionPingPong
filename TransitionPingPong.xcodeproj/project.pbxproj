@@ -15,6 +15,8 @@
 		0A8AAE4A1FE9B66700D65AAF /* BlackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A8AAE491FE9B66700D65AAF /* BlackViewController.swift */; };
 		0A8AAE4C1FE9B67800D65AAF /* BlackViewControllerLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A8AAE4B1FE9B67800D65AAF /* BlackViewControllerLayout.swift */; };
 		0A8AAE4E1FE9B68900D65AAF /* WhiteViewControllerLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A8AAE4D1FE9B68900D65AAF /* WhiteViewControllerLayout.swift */; };
+		0A8AAE501FE9C20900D65AAF /* TransitionCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A8AAE4F1FE9C20900D65AAF /* TransitionCoordinator.swift */; };
+		0A8AAE521FE9C34A00D65AAF /* CircularTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A8AAE511FE9C34A00D65AAF /* CircularTransition.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,8 @@
 		0A8AAE491FE9B66700D65AAF /* BlackViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlackViewController.swift; sourceTree = "<group>"; };
 		0A8AAE4B1FE9B67800D65AAF /* BlackViewControllerLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlackViewControllerLayout.swift; sourceTree = "<group>"; };
 		0A8AAE4D1FE9B68900D65AAF /* WhiteViewControllerLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhiteViewControllerLayout.swift; sourceTree = "<group>"; };
+		0A8AAE4F1FE9C20900D65AAF /* TransitionCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransitionCoordinator.swift; sourceTree = "<group>"; };
+		0A8AAE511FE9C34A00D65AAF /* CircularTransition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularTransition.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +69,8 @@
 				0A8AAE371FE9B56D00D65AAF /* Assets.xcassets */,
 				0A8AAE391FE9B56D00D65AAF /* LaunchScreen.storyboard */,
 				0A8AAE3C1FE9B56D00D65AAF /* Info.plist */,
+				0A8AAE4F1FE9C20900D65AAF /* TransitionCoordinator.swift */,
+				0A8AAE511FE9C34A00D65AAF /* CircularTransition.swift */,
 			);
 			path = TransitionPingPong;
 			sourceTree = "<group>";
@@ -174,6 +180,8 @@
 				0A8AAE311FE9B56D00D65AAF /* AppDelegate.swift in Sources */,
 				0A8AAE481FE9B65A00D65AAF /* WhiteViewController.swift in Sources */,
 				0A8AAE461FE9B64700D65AAF /* ColoredViewController.swift in Sources */,
+				0A8AAE501FE9C20900D65AAF /* TransitionCoordinator.swift in Sources */,
+				0A8AAE521FE9C34A00D65AAF /* CircularTransition.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -12,6 +12,7 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
+    let transitionCoordinator = TransitionCoordinator()
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
@@ -21,6 +22,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         let nav = UINavigationController(rootViewController: whiteVC)
         nav.isNavigationBarHidden = true
+        nav.delegate = transitionCoordinator
         
         window?.rootViewController = nav
         window?.makeKeyAndVisible()
