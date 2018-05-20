@@ -19,12 +19,11 @@ extension WhiteViewController {
         let storyAttributes = [NSAttributedStringKey.foregroundColor: UIColor.lightGray,
                                NSAttributedStringKey.font: UIFont.systemFont(ofSize: 16.0)]
         
-        let mutableAttrString = NSMutableAttributedString(string: "Beep boop, you've unlocked a new\n something or other that I call \"Tech Talk\"\n\n", attributes: titleAttributes)
-        mutableAttrString.append(NSMutableAttributedString(string: "Hi, I'm Pong. Tap the black dot,\n choose stuff you care about and close\n me when you're done. You're going to\n like me.\n\nTouch me.", attributes: storyAttributes))
+        let mutableAttrString = NSMutableAttributedString(string: "Beep boop, you've unlocked a new\n something or other that I call \"Tech Talk\"\n\n", attributes:titleAttributes)
+        mutableAttrString.append(NSAttributedString(string: "Hi, I'm Pong. Tap the black dot,\n choose stuff you care about and close\n me when you're done. You're going to\n like me.\n\nTouch me.", attributes:storyAttributes))
         
         contentTextView.attributedText = mutableAttrString
     }
-    
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
         
@@ -36,9 +35,10 @@ extension WhiteViewController {
         let titleSize = contentTextView.sizeThatFits(constrainedSize)
         
         contentTextView.bounds = CGRect(x: 0, y: 0, width: titleSize.width, height: titleSize.height)
-        contentTextView.center = CGPoint(x: 16 + contentTextView.bounds.width / 2.0, y: 60 + contentTextView.bounds.height / 2.0)
         
-        triggerButton.layer.cornerRadius = buttonWidthHeight / 2.0
+        contentTextView.center = CGPoint(x: 16 + contentTextView.bounds.width/2.0, y: 60 + contentTextView.bounds.height/2.0)
+        
+        triggerButton.layer.cornerRadius = buttonWidthHeight/2.0
         triggerButton.frame = CGRect(x: view.bounds.width - buttonWidthHeight - padding, y: padding + statusBarPadding, width: buttonWidthHeight, height: buttonWidthHeight)
     }
 }

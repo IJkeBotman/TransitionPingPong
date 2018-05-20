@@ -26,8 +26,7 @@ extension BlackViewController {
                         Is it Friday yet?\n\n
                         Movies worth mocking\n\n
                     """
-        
-        let mutableAttrString = NSMutableAttributedString(string: string, attributes: titleAttributes)
+        let mutableAttrString = NSMutableAttributedString(string: string, attributes:titleAttributes)
         
         contentTextView.attributedText = mutableAttrString
     }
@@ -36,7 +35,7 @@ extension BlackViewController {
         super.viewDidLayoutSubviews()
         
         triggerButton.backgroundColor = .white
-        contentTextView.backgroundColor = .clear
+        contentTextView.backgroundColor = .black
         
         let buttonWidthHeight: CGFloat = 25.0
         let padding: CGFloat = 16.0
@@ -46,9 +45,9 @@ extension BlackViewController {
         let titleSize = contentTextView.sizeThatFits(constrainedSize)
         
         contentTextView.bounds = CGRect(x: 0, y: 0, width: titleSize.width, height: titleSize.height)
-        contentTextView.center = CGPoint(x: 16 + contentTextView.bounds.width / 2.0, y: 60 + contentTextView.bounds.height / 2.0)
+        contentTextView.center = CGPoint(x: 16 + contentTextView.bounds.width/2.0, y: 60 + contentTextView.bounds.height/2.0)
         
-        triggerButton.layer.cornerRadius = buttonWidthHeight / 2.0
+        triggerButton.layer.cornerRadius = buttonWidthHeight/2.0
         triggerButton.frame = CGRect(x: view.bounds.width - buttonWidthHeight - padding, y: padding + statusBarPadding, width: buttonWidthHeight, height: buttonWidthHeight)
     }
     

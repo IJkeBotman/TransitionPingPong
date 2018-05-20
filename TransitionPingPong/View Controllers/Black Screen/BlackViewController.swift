@@ -9,6 +9,7 @@
 import UIKit
 
 class BlackViewController: ColoredViewController {
+    
     init() {
         super.init(color: .black)
     }
@@ -18,6 +19,6 @@ class BlackViewController: ColoredViewController {
     }
     
     required init?(coder aDecoder: NSCoder) {
-        fatalError("init(coder:) was not implemented.")
+        fatalError("init(coder:) has not been implemented")
     }
 }

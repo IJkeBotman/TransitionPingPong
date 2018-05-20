@@ -10,22 +10,23 @@ import UIKit
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
-
+    
     var window: UIWindow?
     let transitionCoordinator = TransitionCoordinator()
-
-
+    
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         let whiteVC = WhiteViewController()
         
         window = UIWindow(frame: UIScreen.main.bounds)
-        
         let nav = UINavigationController(rootViewController: whiteVC)
         nav.isNavigationBarHidden = true
+        
+        //Add TransitionCoordinator as navigation controller's delegate
         nav.delegate = transitionCoordinator
         
         window?.rootViewController = nav
         window?.makeKeyAndVisible()
+        
         return true
     }
 }
